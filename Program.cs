@@ -9,13 +9,10 @@ namespace DemoProject3
         /// </summary>
         public static void Main(string[] args)
         {
-            var name = "World";
+            var name = args.Length > 0
+                ? args[0]
+                : "World";
             
-            if(args.Length > 0)
-            {
-                name = args[0];
-            }
-
             Console.WriteLine($"Hello {name}!");
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
