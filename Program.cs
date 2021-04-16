@@ -13,6 +13,7 @@ namespace DemoProject3
                 ? args[0]
                 : "World";
             
+            // Demo comment
             Console.WriteLine($"Hello {name}!");
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
